@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>mi-componente demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../mi-componente.html">
+    <link rel="import" href="../mi-imagen.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic mi-componente demo</h3>
+      <demo-snippet>
+        <template>
+          <mi-componente msg="Buenos dias" extra-comment="Tengo Hambre!" nuevo="Soy nuevo!"></mi-componente>
+
+
+          <mi-imagen img-src="https://i0.wp.com/blog.hostdime.com.co/wp-content/uploads/nodejs-servidor.png"></mi-imagen>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

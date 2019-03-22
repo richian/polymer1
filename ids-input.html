@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="mi-componente">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2> [[msg]] [[extraComment]] [[nuevo]]</h2>
+  </template>
+
+  <script>
+    /**
+     * `mi-componente`
+     *
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class Ids extends Polymer.Element {
+      static get is() { return 'mi-componente'; }
+      static get properties() {
+        return {
+          msg: {
+            type: String,
+            value: 'Hola!'
+          },
+          extraComment:{
+            type: String,
+            value: '¿Como estas?'
+          },
+          nuevo:{
+            type: String,
+            value: 'Soy nuevo'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MiComponente.is, MiComponente);
+  </script>
+</dom-module>
